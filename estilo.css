@@ -1,0 +1,287 @@
+:root{
+    --cor-site: #ffffff;
+    background-color: #000000;
+    
+}
+
+html{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+
+}
+
+.maxWidth{
+    max-width: 90em;/*1440px*/
+}
+
+.header{
+    text-align: center;
+    margin:auto;
+}
+
+.header_logo{
+    width: 7.6em;
+    height: 100%;
+    margin: 1em;
+}
+
+.header_nav{
+    background-color: #233333;
+    color: white;
+    
+}
+
+ul{
+    margin:0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+    
+}
+
+.header_nav a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(7, 19, 74);
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: rgba(185, 203, 244, 0.91);
+}
+
+@media screen and (min-width: 48em){
+    .header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header_nav{
+        background-color: initial;
+        
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+    .header_nav li{
+        display:inline-block;
+    }
+
+    .header_nav a{
+        color: white;
+        background-color: #000000;
+        border-radius: 5px;
+    }
+
+    /*fundo de quando clica no menu*/
+    .header_nav a:hover{
+        background-color: rgba(69, 113, 171, 0.807);
+    }
+}
+
+.trailer{
+    background-image: url(https://img.freepik.com/fotos-premium/vista-da-terra-a-partir-da-lua-elementos-desta-imagem-fornecidos-pela-nasa_180633-3296.jpg?size=626&ext=jpg&ga=GA1.1.1073840699.1688599870&semt=ais);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+
+.trailer div{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.trailer_title{
+    margin-top: 0;
+    padding-top: .5em;
+    color: var(--cor-site);
+    text-align: center;
+}
+
+.trailer h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel', serif;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.trailer_paragrafo{
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px rgb(0, 0, 0);
+}
+
+.botao_article{
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 1em 2em;
+    /*background-color: var(--cor-site);*/
+    background-color: rgba(21, 98, 198, 0.696);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.botao_article:hover{
+    background-color:#7683bd;
+    opacity: 2;
+}
+
+.trailer_botao{
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 1em 3em;
+    background-color: rgba(86, 77, 77, 0.849);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.video{
+    justify-items: center;
+}
+
+.trailer_botao:hover{
+    background-color:rgba(91, 99, 109, 0.74);
+}
+
+
+@media screen and (min-width: 48em){/*768px maior que*/
+    .trailer{
+        background-image: url(https://img.freepik.com/fotos-premium/planeta-terra-no-espaco_56345-193.jpg?size=626&ext=jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: initial;
+    }
+
+    .trailer_paragrafo{
+        margin-bottom: 2em;
+    }
+
+    .trailer_botao{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 48em){
+
+    .video{
+        display:none;
+    }
+}
+
+
+.main_content{
+    background-image: url(https://img.freepik.com/fotos-premium/estrelas-cintilantes-brilhantes-no-espaco-abstrato_250994-1378.jpg?size=626&ext=jpg&ga=GA1.1.1073840699.1688599870&semt=sph);
+    background-position:top;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+}
+
+.main_content div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.main_content_title{
+    /*color: var(--cor-site);*/
+    color: #ffffff;
+    font-family: 'Cinzel', serif;}
+
+
+.icon_img{
+    width: 6.5em;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.col{
+    flex: 1 0 auto;
+    /*
+    flex-grow = 1
+    vai aumentar seu tamanho se houver espaÃ§o
+
+    flex-shrink = 0
+    nÃĢo quero que o elemento diminua
+
+    flex-basis = auto
+    vai depender do width do prÃģprio elemento
+    */
+    width: 100%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+    .col-6{
+        width: calc(50% - 2rem);
+    }
+}
+
+/*tamanho do zoom do logo do cabeçalho*/
+.header_logo{
+    -webkit-transition: -webkit-transform .2s ease;
+    transition: transform .9s ease;
+
+}
+
+.header_logo:hover{
+    transform: scale(1.1);
+
+}
+
+/*tamanho do zoom dos outros ícones*/
+.icon_img{ 
+    -webkit-transition: -webkit-transform .80s ease;
+    transition: transform .9s ease;
+}
+
+img:hover{
+    transform: scale(1.3);
+}
+
+footer{
+    background-color: #464646;
+    color: #ffffff;
+    padding: 0.3em;
+    text-align: center;
+    font-family: 'Cinzel', serif;}
+
+.icone_link{
+    width: 3em;
+}
+
